@@ -7,12 +7,17 @@ import "./App.css"
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import ListaProduto from './components/repeticao/ListaProdutos';
 export default () => {
   return(
     <div className="App">
       <h1>Fundamentos React</h1> 
 
       <div className="Cards">
+        <Card titulo="#07 - Desafio Produto" color="#a2ba89">
+          <ListaProduto />
+        </Card>
+
         <Card titulo="#06 - Repetição" color="#ff4c65">
           <ListaAlunos />
         </Card>
