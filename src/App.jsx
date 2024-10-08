@@ -1,9 +1,10 @@
 import React from 'react';
+import "./App.css"
+
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro';
 import Aleatorio from './components/basicos/Aleatorio';
 import Card from './components/layout/Card';
-import "./App.css"
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
@@ -12,6 +13,8 @@ import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/formulario/Input';
+import Contador from './components/contador/Contador';
 
 export default () => {
   return(
@@ -19,6 +22,14 @@ export default () => {
       <h1>Fundamentos React</h1> 
 
       <div className="Cards">
+        <Card titulo="#12 - Contador" color="#cc3560">
+          <Contador numeroInicial={10} />
+        </Card>
+
+        <Card titulo="#11 - Componente Controlado (Input)" color="#023a09">
+          <Input />
+        </Card>
+
         <Card titulo="#10 - Comunicação Indireta" color="#170c94">
           <IndiretaPai />
         </Card>
